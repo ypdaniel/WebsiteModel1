@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="main_con clearfix">
+    <div class="left_menu_con clearfix">
+        <h3>用户中心</h3>
+        <ul>
+            <li><a href="/user/info/">· 个人信息</a></li>
+            <li><a href="/user/order/">· 全部订单</a></li>
+            <li><a href="/user/site/" class="active">· 收货地址</a></li>
+        </ul>
+    </div>
+	<div class="right_content clearfix">
+			<h3 class="common_title2">全部订单</h3>
+			<ul class="order_list_th w978 clearfix">
+				<li class="col01"></li>
+				<li class="col02"></li>
+				<li class="col02 stress"></li>
+			</ul>
+
+			<table class="order_list_table w980">
+				<tbody>
+					<tr>
+						<td width="55%">
+							<ul class="order_goods_list clearfix">
+								<li class="col01"><img src="/static/images/goods02.jpg"></li>
+								<li class="col02"><em></em></li>
+								<li class="col03"></li>
+								<li class="col04"></li>
+							</ul>
+							<ul class="order_goods_list clearfix">
+								<li class="col01"><img src="/static/images/goods02.jpg"></li>
+								<li class="col02"><em></em></li>
+								<li class="col03"></li>
+								<li class="col04"></li>
+							</ul>
+						</td>
+						<td width="15%"></td>
+						<td width="15%"></td>
+						<td width="15%"><a href="/order/pay/" class="oper_btn">去付款</a></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<ul class="order_list_th w978 clearfix">
+				<li class="col01"></li>
+				<li class="col02"></li>
+				<li class="col02 stress"></li>
+			</ul>
+			<table class="order_list_table w980">
+				<tbody>
+					<tr>
+						<td width="55%">
+							<ul class="order_goods_list clearfix">
+								<li class="col01"><img src="/static/images/goods02.jpg"></li>
+								<li class="col02"><em></em></li>
+								<li class="col03"></li>
+								<li class="col04"></li>
+							</ul>
+							<ul class="order_goods_list clearfix">
+								<li class="col01"><img src="/static/images/goods02.jpg"></li>
+								<li class="col02"><em></em></li>
+								<li class="col03"></li>
+								<li class="col04"></li>
+							</ul>
+						</td>
+						<td width="15%"></td>
+						<td width="15%"></td>
+						<td width="15%"><a href="#" class="oper_btn">查看物流</a></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="pagenation">
+				<a href="#"><上一页</a>
+				<a href="#" class="active">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">下一页></a>
+			</div>
+	</div>
+</div>
+{% endblock body %}
+
